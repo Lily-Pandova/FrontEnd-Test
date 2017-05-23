@@ -1,0 +1,217 @@
+/** Edit this css file as needed. **/
+body {
+	font-family: "Arial";
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 18px;
+	line-height: 1.2;
+}
+
+.editable_box {
+	max-width: 800px;
+	color: #333333;
+}
+
+#editable_box_widget_edit {}
+
+.editable {
+	margin:0 25px;
+	max-width:100%;
+}
+
+.editable:after {
+	content: '.';
+	display: block;
+	clear: both;
+	font-size: 0;
+	line-height :0;
+}
+
+.editable label {
+	font-size: 14px;
+	color: #333333;
+	padding-bottom:10px;
+	padding-top: 20px;
+	display: block;
+	box-sizing: border-box;
+}
+
+.editable_group {
+	margin-bottom: 20px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border:1px solid #cfd3da ;
+	padding-bottom: 35px;
+}
+
+.editable_group h3 {
+	margin-top:0;
+	margin-bottom:0;
+	padding: 0 20px;
+	background: #cfd3da;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.editable_group input {
+	border: 1px solid #cfd3da;
+	border-radius: 3px;
+	height: 35px;
+	padding: 0 15px 0 15px;
+}
+
+input:focus, select:focus, button:focus { outline: none; }
+
+.editable_group select {
+	border: 1px solid #cfd3da;
+	border-radius: 3px;
+	height: 35px;
+	padding: 0 15px 0 15px;
+	box-sizing: content-box;
+}
+
+select {
+	color: #8e8a8a;
+}
+.editable_group::after{
+	content: '.';
+	display: block;
+	clear: both;
+	font-size: 0;
+	line-height: 0;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	font-size: 13px;
+	color: #8e8a8a;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	font-size: 13px;
+	color: #8e8a8a;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	font-size: 13px;
+	color: #8e8a8a;
+}
+:-moz-placeholder { /* Firefox 18- */
+	font-size: 13px;
+	color: #8e8a8a;
+}
+
+/* First Container */
+.editable button.search {
+	margin-left: 0;
+	background-image: url("../images/search.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	font-size: 0;
+	width: 8%;
+	height: 30px;
+	padding: 0 17px;
+	background-color: #cfd3da;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-left: 1px solid #cfd3da;
+}
+
+.editable button.search:hover {
+	background-image: url("../images/search.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.editable_group.editable_group_start input {
+	width:81%;
+	height: 28px;
+	float: left;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+/* Second Container */
+.editable_group.editable_group_setup label {
+	padding-left: 10px;
+}
+
+.editable_group.editable_group_setup input {
+	width: 77.5%;
+	float: left;
+}
+
+.editable_group.editable_group_setup select {
+	width: 89%;
+}
+
+.editable_group.editable_group_setup button {
+	float: left;
+}
+
+/* Third Container */
+.line_of_2 .editable {
+	margin: 0;
+	padding:0 25px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 50%;
+	float: left;
+}
+
+.editable_group.line_of_2 select {
+	width: 76%;
+}
+
+.editable_group.line_of_2 input {
+	width: 53%;
+	color: #8e8a8a;
+	float: left;
+}
+
+.editable_group.line_of_2 button {
+	width: 20%;
+	margin-left: 3%;
+	float: left;
+}
+
+/* The save button, already done for your convenience. */
+.editable button {
+	background-color: #58647c;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#69758d), to(#58647c));
+ 	background-image: -webkit-linear-gradient(top, #69758d, #58647c);
+ 	background-image: -moz-linear-gradient(top, #69758d, #58647c);
+ 	background-image: -ms-linear-gradient(top, #69758d, #58647c);
+ 	background-image: -o-linear-gradient(top, #69758d, #58647c);
+ 	background-image: linear-gradient(to bottom, #69758d, #58647c);
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#69758d, endColorstr=#58647c);
+	color:white;
+	display:inline-block;
+	vertical-align:middle;
+	line-height:16px;
+	font-size:12px;
+	font-weight: normal;
+	width: 10%;
+	height: 37px;
+	text-decoration: none;
+	padding: 5px 10px;
+	border:0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	cursor:pointer;
+	white-space: nowrap;
+	margin-left: 1.5%;
+}
+.editable button:hover  {
+	background: #69758d;
+	border-color: #69758d;
+}
+
+
